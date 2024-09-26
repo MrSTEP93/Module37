@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HomeApp.Pages"
+             x:Class="HomeApp.Pages.RegisterPage">
+    <StackLayout>
+        <Label Text="Login page" FontSize="Large" Padding="30,10,30,10" VerticalTextAlignment="Start" HorizontalTextAlignment="End"/>
+        <Label Text="Welcome to Registration Form!" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        <Entry Placeholder="Email" />
+        <Entry Placeholder="Password" />
+        <Button x:Name="registerButton" Text="{x:Static local:RegisterPage.BUTTON_TEXT}" Clicked="registerButton_Click" />
+        <Label x:Name="errorMessage" FontSize="Small" TextColor="Red" Padding="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+    </StackLayout>
+</ContentPage>
