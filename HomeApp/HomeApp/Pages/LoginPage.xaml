@@ -2,14 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:HomeApp.Pages"
-            x:Class="HomeApp.Pages.LoginPage">  
+            x:Class="HomeApp.Pages.LoginPage">
 
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+    <StackLayout x:Name="stackLayout" VerticalOptions="Center" HorizontalOptions="Center">
         <Label Text="Registration page" FontSize="Large" Padding="30,10,30,10" VerticalTextAlignment="Start" HorizontalTextAlignment="End"/>
         <Label Text="HomeApp - Ваш умный дом" FontSize="Title" Padding="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
         <Button x:Name="loginButton" Text="{x:Static local:LoginPage.BUTTON_TEXT}"
                 Clicked="Login_Click" CornerRadius="{local:ButtonViewExtension ButtonStyle=SemiRound}" />
         <Label x:Name="counter" FontSize="Small" TextColor="Gray" Padding="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"/>
-        <Label x:Name="errorMessage" FontSize="Small" TextColor="Red" Padding="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Label x:Name="infoMessage" FontSize="Small" TextColor="Red" Padding="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Label></Label>
+        <Button Text="ToMergeGridPage" Clicked="ToMergeGridPage"></Button>
     </StackLayout>
 </ContentPage>
