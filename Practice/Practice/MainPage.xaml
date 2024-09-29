@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practice.MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0" Grid.Column="0" Grid.Row="0">
+            <Label Text="Welcome to Weather Checker App!" TextColor="White" FontSize="36"
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+        </Frame>
+        <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="2">
+            <Label Text="We use some random sensors" FontSize="Title" HorizontalTextAlignment="Center" Padding="30,0,30,0"/>
+            <Label Text="Give it a try!" FontSize="16" HorizontalTextAlignment="Center" Padding="30,0,30,20" />
+            <Button Text="GET WEATHER" Clicked="ToValuesPages" />
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
